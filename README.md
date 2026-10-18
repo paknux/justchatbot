@@ -68,7 +68,7 @@ Chatbot berbasis PHP yang mendukung multiple AI provider (Gemini, ChatGPT, Claud
 
 6. **Akses di browser:**
    ```
-   http://IP-Public-Anda
+   http://<IP-Public-Anda>
    ```
 ---
 >  

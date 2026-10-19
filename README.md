@@ -50,6 +50,7 @@ Chatbot berbasis PHP yang mendukung multiple AI provider (Gemini, ChatGPT, Claud
 4. **Kosongkan folder document root Apache:**
    ```bash
    rm -rf /var/www/html/*
+   rm -rf /var/www/html/.*
    ```
 
 5. **Clone repositori langsung ke document root Apache:**

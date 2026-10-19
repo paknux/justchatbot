@@ -8,6 +8,6 @@
  * PENTING: jangan unggah file ini ke GitHub atau tempat publik.
  */
 
-$GEMINI_KEY    = '';   // contoh: 'AIza...'    (gratis dari aistudio.google.com/apikey)
+$GEMINI_KEY    = 'AQ.Ab8RN6JorlPTlagHpcAPHYnPXCi-8se5TbTpoGEIWgd3C9lG4Q'; // contoh: 'AIza...'    (gratis dari aistudio.google.com/apikey)
 $OPENAI_KEY    = '';   // contoh: 'sk-...'     (ChatGPT / OpenAI)
 $ANTHROPIC_KEY = '';   // contoh: 'sk-ant-...' (Claude)

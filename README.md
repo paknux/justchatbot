@@ -46,28 +46,23 @@ Chatbot berbasis PHP yang mendukung multiple AI provider (Gemini, ChatGPT, Claud
    ```bash
    apt install apache2 php libapache2-mod-php php-curl -y
    ```
-4. **Enable Apache2:**
+
+4. **Kosongkan folder document root Apache:**
    ```bash
-   systemctl enable --now apache2
+   rm -rf /var/www/html/*
    ```
 
-
-5. **Kosongkan folder document root Apache:**
+5. **Clone repositori langsung ke document root Apache:**
    ```bash
-   rm -rf /var/www/html
+   git clone https://github.com/paknux/justchatbot.git /var/www/html
    ```
 
-6. **Clone repositori langsung ke document root Apache:**
-   ```bash
-   git clone https://github.com/username/justchatbot.git /var/www/html
-   ```
-
-7. **Masuk ke direktori project:**
+6. **Masuk ke direktori project:**
    ```bash
    cd /var/www/html
    ```
 
-8. **Edit file API key:**
+7. **Edit file API key:**
    ```bash
    nano apikey.php
    ```
@@ -79,7 +74,7 @@ Chatbot berbasis PHP yang mendukung multiple AI provider (Gemini, ChatGPT, Claud
    ```
    > Cukup isi salah satu atau lebih. Key yang kosong akan dilewati.
 
-9. **Akses di browser:**
+8. **Akses di browser:**
    ```
    http://<IP-Public-Anda>
    ```

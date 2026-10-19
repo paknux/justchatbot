@@ -32,29 +32,42 @@ Chatbot berbasis PHP yang mendukung multiple AI provider (Gemini, ChatGPT, Claud
 
 ### Langkah Instalasi
 
-1. **Masuk sebagai root dan update sistem:**
+1. **Masuk sebagai root:**
    ```bash
    sudo su
+   ```
+
+2. **update sistem:**
+   ```bash
    apt update
    ```
 
-2. **Install Apache2 dan PHP:**
+3. **Install Apache2 dan PHP:**
    ```bash
    apt install apache2 php libapache2-mod-php php-curl -y
+   ```
+4. **Enable Apache2:**
+   ```bash
    systemctl enable --now apache2
    ```
 
-3. **Clone repositori langsung ke document root Apache:**
+
+5. **Kosongkan folder document root Apache:**
+   ```bash
+   rm -rf /var/www/html
+   ```
+
+6. **Clone repositori langsung ke document root Apache:**
    ```bash
    git clone https://github.com/username/justchatbot.git /var/www/html
    ```
 
-4. **Masuk ke direktori project:**
+7. **Masuk ke direktori project:**
    ```bash
    cd /var/www/html
    ```
 
-5. **Edit file API key:**
+8. **Edit file API key:**
    ```bash
    nano apikey.php
    ```
@@ -66,12 +79,13 @@ Chatbot berbasis PHP yang mendukung multiple AI provider (Gemini, ChatGPT, Claud
    ```
    > Cukup isi salah satu atau lebih. Key yang kosong akan dilewati.
 
-6. **Akses di browser:**
+9. **Akses di browser:**
    ```
    http://<IP-Public-Anda>
    ```
+
 ---
->  
+
 > ### ⚙️ Keterangan Detail Tambahan
 >
 > #### Mengubah Model AI
